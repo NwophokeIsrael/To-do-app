@@ -1,38 +1,83 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Sometype+Mono:wght@400;500;600;700&display=swap');
+
+body {
+    background: rgb(14, 9, 9);
+    background: linear-gradient(90deg, rgba(20, 1, 1, 0.844) 0%, rgb(18, 152, 152) 100%);
+    font-family: 'Sometype Mono', monospace;
+    margin: 0;
+    padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app-title {
+    font-size: 50px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.task-section {
+    margin-bottom: 40px;
 }
 
-.App-link {
-  color: #61dafb;
+.section-title-one {
+    color: rgb(158, 93, 93);
+    margin-top: 0;
+}
+.section-title-two {
+    color: rgb(58, 0, 128);
+    margin-top: 0;
+}
+.section-title-three {
+    color: rgb(255, 153, 0);
+    margin-top: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.add-task-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.add-task-button {
+    background-color: #66bc99;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    padding: 10px 25px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.add-task-button:hover {
+    background-color: #54987d;
+}
+
+.task-list {
+    list-style: none;
+    padding: 0;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.task-actions {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    color: rgb(57, 2, 13);
 }
